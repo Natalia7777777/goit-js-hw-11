@@ -116,19 +116,3 @@ function skrollGallery() {
     behavior: "smooth",
   });
 }
-
-// const options = {
-//   rootMargin: '0px',
-//   threshold: 1.0
-// }
-
-// const observer = new IntersectionObserver((entries) => {
-//   entries.forEach(entry => {
-//     if (entry.isIntersecting) {
-//       onLoadMore();
-//     }
-//   })
-// }, options);
-
-// observer.observe(document.querySelector('.scroll-guard'));
-
