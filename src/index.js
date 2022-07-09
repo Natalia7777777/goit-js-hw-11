@@ -55,7 +55,10 @@ class CardsApiService {
 
       if (lastPage < this.page) {
         loadMoreBtn.style.display = "none";
-        Notify.info(`We're sorry, but you've reached the end of search results.`);
+        
+        setTimeout(() => {
+        return Notify.info(`We're sorry, but you've reached the end of search results.`);
+        }, 1000);
       }
 
       return card;
