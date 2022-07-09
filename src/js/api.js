@@ -4,7 +4,6 @@ import { Notify } from 'notiflix/build/notiflix-notify-aio';
 const API_URL = 'https://pixabay.com/api';
 const API_KEY = '28423849-c8b594ea004961bd1459fecfa';
 
-
 export default class CardsApiService {
     constructor() {
         this.searchQuery = "";

@@ -37,8 +37,8 @@ function onSearch(e) {
         return;
       }
       loadMoreBtn.style.display = "block";
+      searchForm.reset();
     });
-  
 }
 
 function onLoadMore() {
@@ -47,9 +47,7 @@ function onLoadMore() {
       renderCardList(hits);
       skrollGallery();
 
-      console.log(hits.length);
-
-      console.log(cardsApiService.per_page);
+      console.log(cardsApiService.fetchCards.arguments);
 
       if (hits.length < cardsApiService.per_page) {
         loadMoreBtn.style.display = "none";
@@ -112,7 +110,7 @@ function skrollGallery() {
     .firstElementChild.getBoundingClientRect();
 
   window.scrollBy({
-    top: cardHeight * 2,
+    top: cardHeight * 3,
     behavior: "smooth",
   });
 }
